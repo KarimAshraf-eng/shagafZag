@@ -1,13 +1,5 @@
-import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_button.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_text_field.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
-import 'package:shagaf_zag/core/theme/images.dart';
-import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
+
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -52,13 +44,12 @@ class SignUpView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Phone Number',
+                    'Email',
                     style: ShagafFontStyles.blackNormal14,
                   ),
                   5.verticalSpace,
                   const CustomTextField(
-                      hintText: 'Enter your phone number',
-                      icon: Icons.phone_outlined),
+                      hintText: 'Enter your email', icon: person),
                   20.verticalSpace,
                   Text(
                     'User Name',
@@ -66,8 +57,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   5.verticalSpace,
                   const CustomTextField(
-                      hintText: 'Enter your name',
-                      icon: Icons.person_outline_rounded),
+                      hintText: 'Enter your name', icon: person),
                   20.verticalSpace,
                   Text(
                     'Password',
@@ -75,8 +65,7 @@ class SignUpView extends StatelessWidget {
                   ),
                   5.verticalSpace,
                   const CustomTextField(
-                      hintText: 'Enter your password',
-                      icon: Icons.lock_outline_rounded),
+                      hintText: 'Enter your password', icon: password),
                   20.verticalSpace,
                   Text(
                     'Confirm Password',
@@ -84,26 +73,28 @@ class SignUpView extends StatelessWidget {
                   ),
                   5.verticalSpace,
                   const CustomTextField(
-                      hintText: 'Confirm password',
-                      icon: Icons.person_outline_rounded),
+                      hintText: 'Confirm password', icon: password),
                   20.verticalSpace,
                   CustomButton(label: 'SIGN UP', onTap: () {}),
                   14.verticalSpace,
                   Center(
                     child: RichText(
-                        text: TextSpan(
-                            text: 'Already  have an account? ',
-                            style: ShagafFontStyles.normal10,
-                            children: [
+                      text: TextSpan(
+                        text: 'Already  have an account? ',
+                        style: ShagafFontStyles.normal10,
+                        children: [
                           TextSpan(
-                              text: 'Log In',
-                              style: ShagafFontStyles.redMedium12,
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () {
-                                  GoRouter.of(context)
-                                      .pushReplacement(AppRouters.loginView);
-                                })
-                        ])),
+                            text: 'Log In',
+                            style: ShagafFontStyles.redMedium12,
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                GoRouter.of(context)
+                                    .pushReplacement(AppRouters.loginView);
+                              },
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),

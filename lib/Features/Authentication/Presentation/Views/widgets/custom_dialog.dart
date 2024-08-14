@@ -1,8 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_button.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
+
 
 class CustomDialog extends StatelessWidget {
   const CustomDialog({super.key});
@@ -32,10 +29,11 @@ class CustomDialog extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 50.r),
             child: CustomButton(
               height: 50,
-                label: 'Done',
-                onTap: () {
-                  Navigator.of(context).pop();
-                }),
+              label: 'Done',
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+            ),
           )
         ],
       ),

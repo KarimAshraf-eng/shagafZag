@@ -1,10 +1,4 @@
-import 'package:go_router/go_router.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/forget_password_view.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/login_view.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/signup_view.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/verify_view.dart';
-import 'package:shagaf_zag/Features/splash_screen/Presentation/Views/on_bording_view.dart';
-import 'package:shagaf_zag/Features/splash_screen/Presentation/Views/splash_view.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 abstract class AppRouters {
   static const onBordingView = "/OnBordingview";

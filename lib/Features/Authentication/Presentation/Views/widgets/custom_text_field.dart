@@ -1,12 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class CustomTextField extends StatelessWidget {
   final String hintText;
-  final IconData icon;
-  const CustomTextField({super.key, required this.hintText, required this.icon});
+  final String icon;
+  const CustomTextField(
+      {super.key, required this.hintText, required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +17,11 @@ class CustomTextField extends StatelessWidget {
           isDense: true,
           contentPadding: const EdgeInsets.only(left: 5),
           prefixIcon: Padding(
-            padding: const EdgeInsets.only(left: 10, right: 5,top: 5),
-            child: Icon(
+            padding: const EdgeInsets.only(left: 10, right: 5, top: 5,bottom: 5),
+            child: SvgPicture.asset(
               icon,
-              size: 14.sp,
-              color: ShagafColors.faint,
+              width: 20.w,
+              height: 20.h,
             ),
           ),
           prefixIconConstraints: BoxConstraints(
@@ -36,7 +34,8 @@ class CustomTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(width: 1.5, color: ShagafColors.secondaryColor),
+            borderSide: const BorderSide(
+                width: 1.5, color: ShagafColors.secondaryColor),
             borderRadius: BorderRadius.circular(6),
           ),
         ),

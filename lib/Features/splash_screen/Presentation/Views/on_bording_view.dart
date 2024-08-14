@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
-import 'package:shagaf_zag/Features/splash_screen/Presentation/Views/Widgets/bottom_sheet.dart';
-import 'package:shagaf_zag/Features/splash_screen/Presentation/Views/Widgets/on_bording_design.dart';
-import 'package:shagaf_zag/Features/splash_screen/data/onboarding_items.dart';
-import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class OnBordingView extends StatefulWidget {
   const OnBordingView({super.key});

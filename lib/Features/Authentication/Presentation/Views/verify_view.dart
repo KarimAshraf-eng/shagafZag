@@ -1,13 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_button.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_dialog.dart';
-import 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_otp_field.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
-import 'package:shagaf_zag/core/theme/images.dart';
-import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
+
 
 class VerifyView extends StatelessWidget {
   const VerifyView({super.key});
@@ -59,11 +51,11 @@ class VerifyView extends StatelessWidget {
                   20.verticalSpace,
                   RichText(
                     text: TextSpan(
-                        text: 'Enter code that we have sent to your number ',
+                        text: 'Enter code that we have sent to your email ',
                         style: ShagafFontStyles.greyNormal12,
                         children: [
                           TextSpan(
-                            text: '012345678*** ',
+                            text: '*********45@gmail.com',
                             style: ShagafFontStyles.blackNormal12,
                           ),
                         ]),
@@ -95,7 +87,7 @@ class VerifyView extends StatelessWidget {
                         showDialog(
                           context: context,
                           builder: (BuildContext context) {
-                            return CustomDialog();
+                            return const CustomDialog();
                           },
                         );
                       }),

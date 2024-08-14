@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
+
 
 class CustomButton extends StatelessWidget {
   final String label;
