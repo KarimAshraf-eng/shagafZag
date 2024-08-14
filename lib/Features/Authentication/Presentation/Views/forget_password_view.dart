@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -9,8 +8,8 @@ import 'package:shagaf_zag/core/theme/fonts.dart';
 import 'package:shagaf_zag/core/theme/images.dart';
 import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class ForgetPasswordView extends StatelessWidget {
+  const ForgetPasswordView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +25,7 @@ class LoginView extends StatelessWidget {
                 10.horizontalSpace,
                 IconButton(
                   onPressed: () {
-                    GoRouter.of(context)
-                        .pushReplacement(AppRouters.onBordingView);
+                    GoRouter.of(context).pushReplacement(AppRouters.loginView);
                   },
                   icon: const Icon(
                     Icons.arrow_back_ios_sharp,
@@ -53,6 +51,16 @@ class LoginView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
+                    'Forgot Your Password?',
+                    style: ShagafFontStyles.blacksemiBold20,
+                  ),
+                  20.verticalSpace,
+                  Text(
+                    'Enter your phone number, we will send you confirmation code',
+                    style: ShagafFontStyles.greyNormal12,
+                  ),
+                  40.verticalSpace,
+                  Text(
                     'Phone Number',
                     style: ShagafFontStyles.blackNormal14,
                   ),
@@ -61,49 +69,13 @@ class LoginView extends StatelessWidget {
                       hintText: 'Enter your phone number',
                       icon: Icons.phone_outlined),
                   20.verticalSpace,
-                  Text(
-                    'Password',
-                    style: ShagafFontStyles.blackNormal14,
-                  ),
-                  5.verticalSpace,
-                  const CustomTextField(
-                      hintText: 'Enter your password',
-                      icon: Icons.lock_outline_rounded),
-                  5.verticalSpace,
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      RichText(
-                          text: TextSpan(
-                              text: 'Forget Password?',
-                              style: ShagafFontStyles.greyLight10,
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () {
-                                  GoRouter.of(context)
-                                      .pushReplacement(AppRouters.forgetPasswordView);
-                                }))
-                    ],
-                  ),
+                  CustomButton(
+                      label: 'Reset Password',
+                      onTap: () {
+                        GoRouter.of(context)
+                            .pushReplacement(AppRouters.verifyView);
+                      }),
                   20.verticalSpace,
-                  CustomButton(label: 'LOGIN', onTap: () {}),
-                  14.verticalSpace,
-                  Center(
-                    child: RichText(
-                        text: TextSpan(
-                            text: 'Don’t have an account? ',
-                            style: ShagafFontStyles.normal10,
-                            children: [
-                          TextSpan(
-                              text: 'Sign up',
-                              style: ShagafFontStyles.redMedium12,
-                              recognizer: TapGestureRecognizer()
-                                ..onTap = () {
-                                  GoRouter.of(context)
-                                      .pushReplacement(AppRouters.signUpView);
-                                })
-                        ])),
-                  ),
-                  14.verticalSpace,
                 ],
               ),
             )

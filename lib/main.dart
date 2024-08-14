@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shagaf_zag/Core/Utils/app_routers/app_routers.dart';
+import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
 
 void main() {
   runApp(const MyApp());

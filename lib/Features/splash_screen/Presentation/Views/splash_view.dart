@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:shagaf_zag/Core/Utils/Constatn/images.dart';
-import 'package:shagaf_zag/Core/Utils/app_routers/app_routers.dart';
+import 'package:shagaf_zag/core/theme/images.dart';
+import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -32,7 +33,12 @@ class _SplashViewState extends State<SplashView> {
               fit: BoxFit.cover,
             ),
           ),
-          Center(child: Image.asset(logo))
+          Center(
+            child: Image.asset(
+              logo,
+              scale: 6.r,
+              fit: BoxFit.cover,
+              ))
         ],
       ),
     );
