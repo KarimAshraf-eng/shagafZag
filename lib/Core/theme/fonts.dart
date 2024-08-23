@@ -14,6 +14,19 @@ abstract class ShagafFontStyles {
       color: Colors.white,
       fontFamily: 'Comfortaa');
 
+      static final whiteSemiBold24 = TextStyle(
+      fontSize: 24.sp,
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+      
+
+      static final whiteSemiBold18 = TextStyle(
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+
   static final whiteNormal17 = TextStyle(
       fontSize: 17.sp,
       fontWeight: FontWeight.w400,
@@ -83,6 +96,41 @@ abstract class ShagafFontStyles {
   static final blacksemiBold20 = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeight.w600,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
+      
+  static final whitesemiBold12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+
+
+  static final whiteMedium12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+
+    
+  static final darkGreyMedium20 = TextStyle(
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.darkGrey,
+      fontFamily: 'Comfortaa');
+
+
+
+      static final whiteMidum16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w800,
+      color: Colors.white,
+      fontFamily: 'Glory');
+
+
+        static final blackMedium16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500,
       color: Colors.black,
       fontFamily: 'Comfortaa');
 }

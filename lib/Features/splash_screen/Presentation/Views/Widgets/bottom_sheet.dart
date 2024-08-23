@@ -1,11 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:icons_plus/icons_plus.dart';
-import 'package:shagaf_zag/core/theme/color.dart';
-import 'package:shagaf_zag/core/utils/app_routers/app_routers.dart';
-import 'package:shagaf_zag/Features/splash_screen/data/onboarding_items.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class BottomSheetView extends StatelessWidget {
   final PageController pageController;

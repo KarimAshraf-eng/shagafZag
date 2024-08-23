@@ -36,6 +36,10 @@ dependencies:
   flutter_svg: ^2.0.10+1
   go_router: ^14.2.3
   smooth_page_indicator: ^1.2.0+3
+  animated_bottom_navigation_bar: ^1.3.3
+  carousel_slider: ^5.0.0
+  shape_to_go: ^0.0.2
+  flutter_custom_clippers: ^2.1.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -71,9 +75,9 @@ flutter:
         - asset: assets/fonts/Comfortaa-Regular.ttf
     #       - asset: fonts/Schyler-Italic.ttf
     #         style: italic
-    # - family: OleoScript-Reqular
-    #   fonts:
-    #     - asset: fonts/OleoScript-Regular.ttf
+    - family: Glory
+      fonts:
+        - asset: assets/fonts/Glory-VariableFont_wght.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

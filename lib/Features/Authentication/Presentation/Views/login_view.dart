@@ -1,6 +1,5 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
-
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
 
@@ -77,7 +76,11 @@ class LoginView extends StatelessWidget {
                     ],
                   ),
                   20.verticalSpace,
-                  CustomButton(label: 'LOGIN', onTap: () {}),
+                  CustomButton(
+                      label: 'LOGIN',
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouters.homeView);
+                      }),
                   14.verticalSpace,
                   Center(
                     child: RichText(
