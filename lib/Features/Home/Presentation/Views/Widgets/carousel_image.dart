@@ -9,6 +9,7 @@ class CarouselImage extends StatelessWidget {
     return Stack(
       children: [
         SizedBox(
+          height: 310.h,
           width: double.infinity,
           child: Image.asset(
             item,
