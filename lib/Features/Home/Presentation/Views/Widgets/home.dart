@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
     return  SingleChildScrollView(
       child: Column(
         children: [
-          const CoustomCarouselSlider(),
+          const HomeCarouselSlider(),
           const Advertisement(),
           const Category(),
           40.verticalSpace,

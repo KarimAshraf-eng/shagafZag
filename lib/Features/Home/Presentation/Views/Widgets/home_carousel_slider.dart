@@ -1,13 +1,13 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
-class CoustomCarouselSlider extends StatefulWidget {
-  const CoustomCarouselSlider({super.key});
+class HomeCarouselSlider extends StatefulWidget {
+  const HomeCarouselSlider({super.key});
 
   @override
-  State<CoustomCarouselSlider> createState() => _CoustomCarouselSliderState();
+  State<HomeCarouselSlider> createState() => _HomeCarouselSliderState();
 }
 
-class _CoustomCarouselSliderState extends State<CoustomCarouselSlider> {
+class _HomeCarouselSliderState extends State<HomeCarouselSlider> {
   int currentIndex = 0;
   final pageController = PageController();
 
