@@ -35,7 +35,9 @@ class Category extends StatelessWidget {
                       color: ShagafColors.primaryColor.withOpacity(0.65),
                       width: 342.w,
                       height: 220.h,
-                      onTap: () {},
+                      onTap: () {
+                        GoRouter.of(context).push(AppRouters.roomView);
+                      },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,7 +55,7 @@ class Category extends StatelessWidget {
                     )),
               ),
               Positioned(
-                left: (MediaQuery.of(context).size.width - 342) / 2,
+                left: (MediaQuery.of(context).size.width - 342) / 3,
                 bottom: 0,
                 child: ClipPath(
                     clipper: Potter(points: [
@@ -84,7 +86,7 @@ class Category extends StatelessWidget {
                         ))),
               ),
               Positioned(
-                right: (MediaQuery.of(context).size.width - 342) / 2,
+                right: (MediaQuery.of(context).size.width - 342) / 3,
                 bottom: 0,
                 child: ClipPath(
                   clipper: Potter(points: [

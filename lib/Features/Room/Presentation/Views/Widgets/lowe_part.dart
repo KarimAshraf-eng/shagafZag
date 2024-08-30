@@ -1,6 +1,5 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
-
 class LowePart extends StatelessWidget {
   final RoomsModel model;
   const LowePart({super.key, required this.model});
@@ -29,7 +28,14 @@ class LowePart extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return const BottomSheetAmenities();
+                        },
+                      );
+                    },
                     icon: SvgPicture.asset(
                       doubleArrowDown,
                       width: 20,

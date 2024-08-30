@@ -51,4 +51,7 @@ export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/price_and_da
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/animated_indicator.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/location_name.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_appbar.dart';
+export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottom_sheet_amenities.dart';
+export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottomsheetprice.dart';
+export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/custom_radio_button.dart';
 

@@ -163,6 +163,12 @@ abstract class ShagafFontStyles {
       color: const Color(0xff585858),
       fontFamily: 'Comfortaa');
 
+      static final crayolaMedium12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+      color: const Color(0xff585858),
+      fontFamily: 'Comfortaa');
+
       static final redBold16 = TextStyle(
       fontSize: 16.sp,
       fontWeight: FontWeight.w700,
@@ -179,5 +185,11 @@ abstract class ShagafFontStyles {
       fontSize: 16.sp,
       fontWeight: FontWeight.w400,
       color: Colors.white,
+      fontFamily: 'Comfortaa');
+
+      static final b1kMedium16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500,
+      color: const Color(0xff1B1B1B),
       fontFamily: 'Comfortaa');
 }

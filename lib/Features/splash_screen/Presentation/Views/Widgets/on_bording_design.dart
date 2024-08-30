@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:shagaf_zag/core/theme/fonts.dart';
-import 'package:shagaf_zag/Features/splash_screen/data/on_boarding_info.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class OnBordingDesign extends StatelessWidget {
   final OnbordingInfo controller;

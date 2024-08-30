@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class PriceAndData extends StatelessWidget {
@@ -27,20 +26,32 @@ class PriceAndData extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text.rich(
-            TextSpan(
+          InkWell(
+            onTap: (){
+              showModalBottomSheet(
+                        context: context,
+                        builder: (context) {
+                          return const Bottomsheetprice();
+                        },
+                      );
+            },
+            child: Row(
               children: [
-                TextSpan(
-                  text: "100.0 ",
-                  style: ShagafFontStyles.redBold16,
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "100.0 ",
+                        style: ShagafFontStyles.redBold16,
+                      ),
+                      TextSpan(text: "EGP/Day", style: ShagafFontStyles.redMedium14)
+                    ],
+                  ),
                 ),
-                TextSpan(text: "EGP/Day", style: ShagafFontStyles.redMedium14)
+                10.horizontalSpace,
+                SvgPicture.asset(arrowDown),
               ],
             ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: SvgPicture.asset(arrowDown),
           ),
           InkWell(
             onTap: () {},
