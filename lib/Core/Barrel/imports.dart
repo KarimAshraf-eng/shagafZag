@@ -54,4 +54,4 @@ export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_appbar.
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottom_sheet_amenities.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottomsheetprice.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/custom_radio_button.dart';
-
+export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_widget.dart';

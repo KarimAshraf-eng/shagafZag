@@ -19,20 +19,20 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, left: 18,bottom: 10),
+              padding: const EdgeInsets.only(top: 12, left: 24,bottom: 12),
               child: Text(
                 "Select your plan",
                 style: ShagafFontStyles.b1kMedium16,
               ),
             ),
             CustomRadioButton(
-              title: "60.0 EGP/Hour",
+              title: " 60.0 EGP/Hour",
               icon: clock,
               value: 1,
               groupValue: selectedValue,
               outerColor: ShagafColors.secondaryColor,
               innerColor: Colors.white,
-              borderWidth: 5,
+              borderWidth: selectedValue == 1?6:1.5,
               onChanged: (int? value) {
                 setState(() {
                   selectedValue = value;
@@ -40,13 +40,13 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
               },
             ),
             CustomRadioButton(
-              title: "500.0 EGP/Hour",
+              title: " 500.0 EGP/Hour",
               icon: calender,
               value: 2,
               groupValue: selectedValue,
               outerColor: ShagafColors.secondaryColor,
               innerColor: Colors.white,
-              borderWidth: 5,
+              borderWidth: selectedValue == 2?6:1.5,
               onChanged: (int? value) {
                 setState(() {
                   selectedValue = value;
@@ -54,13 +54,13 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
               },
             ),
             CustomRadioButton(
-              title: "8,000.0 EGP/Hour",
+              title: " 8,000.0 EGP/Hour",
               icon: calendarDate,
               value: 3,
               groupValue: selectedValue,
               outerColor: ShagafColors.secondaryColor,
               innerColor: Colors.white,
-              borderWidth: 5,
+              borderWidth: selectedValue == 3?6:1.5,
               onChanged: (int? value) {
                 setState(() {
                   selectedValue = value;
@@ -71,17 +71,17 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
               padding: const EdgeInsets.only(left: 24,top: 30),
               child: SizedBox(
                 width: 342.w,
-                height: 50.h,
+                height: 38.h,
                 child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12), 
-              ),
-                  backgroundColor: ShagafColors.backgroundColor,
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    backgroundColor: ShagafColors.backgroundColor,
+                  ),
+                  child: Text('Select Data',style: ShagafFontStyles.whiteNormal17,),
                 ),
-                child: Text('Select Data',style: ShagafFontStyles.whiteNormal17,),
-                          ),
               ),
             ),
           ],

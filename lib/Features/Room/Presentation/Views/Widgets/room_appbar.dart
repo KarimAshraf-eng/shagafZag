@@ -21,6 +21,7 @@ class RoomAppbar extends StatelessWidget {
               },
               icon: const Icon(
                 Icons.arrow_back_ios_sharp,
+                color: Colors.black,
                 size: 24,
               ),
             ),

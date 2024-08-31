@@ -1,5 +1,4 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_widget.dart';
 
 class RoomBody extends StatelessWidget {
   const RoomBody({super.key});
