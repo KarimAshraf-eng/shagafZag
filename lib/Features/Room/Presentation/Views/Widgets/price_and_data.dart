@@ -27,13 +27,13 @@ class PriceAndData extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           InkWell(
-            onTap: (){
+            onTap: () {
               showModalBottomSheet(
-                        context: context,
-                        builder: (context) {
-                          return const Bottomsheetprice();
-                        },
-                      );
+                context: context,
+                builder: (context) {
+                  return const Bottomsheetprice();
+                },
+              );
             },
             child: Row(
               children: [
@@ -44,7 +44,8 @@ class PriceAndData extends StatelessWidget {
                         text: "100.0 ",
                         style: ShagafFontStyles.redBold16,
                       ),
-                      TextSpan(text: "EGP/Day", style: ShagafFontStyles.redMedium14)
+                      TextSpan(
+                          text: "EGP/Day", style: ShagafFontStyles.redMedium14)
                     ],
                   ),
                 ),
@@ -53,22 +54,13 @@ class PriceAndData extends StatelessWidget {
               ],
             ),
           ),
-          InkWell(
-            onTap: () {},
-            child: Container(
-              alignment: Alignment.center,
+          CustomButton(
+              label: 'Select Data',
               width: 131.w,
               height: 38.h,
-              decoration: BoxDecoration(
-                color: ShagafColors.secondaryColor,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                "Select Data",
-                style: ShagafFontStyles.whiteNormal16,
-              ),
-            ),
-          ),
+              color: ShagafColors.secondaryColor,
+              style: ShagafFontStyles.whiteNormal16,
+              onTap: () {}),
         ],
       ),
     );

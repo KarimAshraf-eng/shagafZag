@@ -39,7 +39,7 @@ dependencies:
   flutter_custom_clippers: ^2.1.0
   flutter_map: ^4.0.0
   latlong2: ^0.8.1
-  maps_launcher:
+  maps_launcher: ^2.2.1
   flutter:
     sdk: flutter
 

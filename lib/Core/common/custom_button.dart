@@ -1,11 +1,21 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
-
 class CustomButton extends StatelessWidget {
   final String label;
   final void Function() onTap;
   final double height;
-  const CustomButton({super.key, required this.label, required this.onTap, this.height = 40});
+  final double width;
+  final Color color;
+  final TextStyle style;
+  CustomButton({
+    super.key,
+    required this.label,
+    required this.onTap,
+    this.height = 40,
+    this.width = double.maxFinite,
+    this.color = ShagafColors.primaryColor,
+    TextStyle? style 
+  }) : style = style ?? ShagafFontStyles.whiteMedium14;
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +24,16 @@ class CustomButton extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: Ink(
-          color: ShagafColors.primaryColor,
+          color: color,
           height: height.h,
-          width: double.maxFinite,
+          width: width.w,
           child: InkWell(
             onTap: onTap,
             child: SizedBox(
               child: Center(
                   child: Text(
                 label,
-                style: ShagafFontStyles.whiteMedium14,
+                style: style,
               )),
             ),
           ),

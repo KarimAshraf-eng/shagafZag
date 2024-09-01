@@ -48,43 +48,46 @@ class _LocationState extends State<Location> {
         ),
         Stack(
           children: [
-            SizedBox(
-              width: 342.w,
-              height: 145.h,
-              child: FlutterMap(
-                mapController: mapController,
-                options: MapOptions(
-                  center: LatLng(latitude, longitude),
-                  zoom: 17.0,
-                ),
-                children: [
-                  TileLayer(
-                    urlTemplate:
-                        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                    subdomains: const ['a', 'b', 'c'],
-                    maxZoom: 40.0,
-                    minZoom: 12.0,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: SizedBox(
+                width: 342.w,
+                height: 145.h,
+                child: FlutterMap(
+                  mapController: mapController,
+                  options: MapOptions(
+                    center: LatLng(latitude, longitude),
+                    zoom: 17.0,
                   ),
-                  MarkerLayer(
-                    markers: [
-                      Marker(
-                        width: 80.0.w,
-                        height: 80.0.h,
-                        point: LatLng(latitude, longitude),
-                        builder: (ctx) => GestureDetector(
-                          onTap: () {
-                            MapsLauncher.launchCoordinates(latitude, longitude);
-                          },
-                          child: const Icon(
-                            Icons.location_on,
-                            color: Colors.red,
-                            size: 40.0,
+                  children: [
+                    TileLayer(
+                      urlTemplate:
+                          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                      subdomains: const ['a', 'b', 'c'],
+                      maxZoom: 40.0,
+                      minZoom: 12.0,
+                    ),
+                    MarkerLayer(
+                      markers: [
+                        Marker(
+                          width: 80.0.w,
+                          height: 80.0.h,
+                          point: LatLng(latitude, longitude),
+                          builder: (ctx) => GestureDetector(
+                            onTap: () {
+                              MapsLauncher.launchCoordinates(latitude, longitude);
+                            },
+                            child: const Icon(
+                              Icons.location_on,
+                              color: Colors.red,
+                              size: 40.0,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
             IconButton(

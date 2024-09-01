@@ -43,7 +43,7 @@ class CustomOtpField extends StatefulWidget {
   final EdgeInsetsGeometry? contentPadding;
   final List<Widget> spacers;
 
-  CustomOtpField({
+  CustomOtpField({super.key, 
     this.showCursor = true,
     this.numberOfFields = 4,
     this.fieldWidth = 40.0,
@@ -79,11 +79,12 @@ class CustomOtpField extends StatefulWidget {
     this.contentPadding,
     this.spacers = const []
   })  : assert(numberOfFields > 0),
-        assert(styles.length > 0
+        assert(styles.isNotEmpty
             ? styles.length == numberOfFields
-            : styles.length == 0);
+            : styles.isEmpty);
 
   @override
+  // ignore: library_private_types_in_public_api
   _CustomOtpFieldState createState() => _CustomOtpFieldState();
 }
 
@@ -121,13 +122,15 @@ class _CustomOtpFieldState extends State<CustomOtpField> {
   @override
   void dispose() {
     super.dispose();
-    _textControllers
-        .forEach((TextEditingController? controller) => controller?.dispose());
+    for (var controller in _textControllers) {
+      controller?.dispose();
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     // Listens for backspace key event when textfield is empty. Moves to previous node if possible.
+    // ignore: deprecated_member_use
     return RawKeyboardListener(
         focusNode: FocusNode(),
         onKey: (value) {
@@ -227,7 +230,7 @@ class _CustomOtpFieldState extends State<CustomOtpField> {
       addFocusNodeToEachTextField(index: i);
       addTextEditingControllerToEachTextField(index: i);
 
-      if (widget.styles.length > 0) {
+      if (widget.styles.isNotEmpty) {
         return _buildTextField(
           context: context,
           index: i,
@@ -264,7 +267,7 @@ class _CustomOtpFieldState extends State<CustomOtpField> {
     required int indexOfTextField,
   }) {
     //only change focus to the next textField if the value entered has a length greater than one
-    if (value.length > 0) {
+    if (value.isNotEmpty) {
       //if the textField in focus is not the last textField,
       // change focus to the next textField
       if (indexOfTextField + 1 != widget.numberOfFields) {
@@ -287,13 +290,13 @@ class _CustomOtpFieldState extends State<CustomOtpField> {
     // Race condition eliminator
     _backspaceHandled = true;
     Future.delayed(
-      Duration(milliseconds: 100),
+      const Duration(milliseconds: 100),
       () {
         _backspaceHandled = false;
       },
     );
     //only change focus to the previous textField if the value entered has a length zero
-    if (value.length == 0) {
+    if (value.isEmpty) {
       //if the textField in focus is not the first textField,
       // change focus to the previous textField
       if (indexOfTextField != 0) {
@@ -305,12 +308,13 @@ class _CustomOtpFieldState extends State<CustomOtpField> {
 
   void changeFocusToPreviousNodeWhenTapBackspace() async {
     // Wait because this is running before [changeFocusToPreviousNodeWhenValueIsRemoved]
-    await Future.delayed(Duration(milliseconds: 50));
+    await Future.delayed(const Duration(milliseconds: 50));
     if (_backspaceHandled) return;
     try {
       final index =
           _focusNodes.indexWhere((element) => element?.hasFocus ?? false);
       if (index > 0) {
+        // ignore: use_build_context_synchronously
         FocusScope.of(context).requestFocus(_focusNodes[index - 1]);
       }
     } catch (e) {

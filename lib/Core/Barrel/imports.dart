@@ -10,7 +10,7 @@ export 'package:shagaf_zag/Features/splash_screen/Presentation/Views/Widgets/bot
 export 'package:shagaf_zag/Features/splash_screen/Presentation/Views/Widgets/on_bording_design.dart';
 export 'package:shagaf_zag/Features/splash_screen/data/onboarding_items.dart';
 export 'package:shagaf_zag/Features/splash_screen/data/on_boarding_info.dart';
-export 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_button.dart';
+export 'package:shagaf_zag/Core/common/custom_button.dart';
 export 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_dialog.dart';
 export 'package:shagaf_zag/Features/Authentication/Presentation/Views/widgets/custom_otp_field.dart';
 export 'package:flutter/gestures.dart';
@@ -55,3 +55,4 @@ export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottom_sheet
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottomsheetprice.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/custom_radio_button.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_widget.dart';
+export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/favorite_button.dart';

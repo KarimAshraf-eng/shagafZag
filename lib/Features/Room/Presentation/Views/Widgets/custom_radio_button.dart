@@ -27,6 +27,7 @@ class CustomRadioButton extends StatelessWidget {
     return ListTile(
       title: Row(
         children: [
+          // ignore: deprecated_member_use
           SvgPicture.asset(icon,color: groupValue == value ? outerColor : const Color(0xff6B6B6B),),
           Text(title,style: TextStyle(
       fontSize: 12.sp,

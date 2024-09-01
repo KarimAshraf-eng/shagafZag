@@ -39,6 +39,7 @@ class CustomDrawer extends StatelessWidget {
                     onTap: () {},
                   ),
                   ListTile(
+                    // ignore: deprecated_member_use
                     leading: SvgPicture.asset(notification, color: ShagafColors.secondaryColor),
                     title: Text('Notification', style: ShagafFontStyles.blackMedium16),
                     onTap: () {},

@@ -28,7 +28,7 @@ class CustomDialog extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 50.r),
             child: CustomButton(
-              height: 50,
+              height: 50.h,
               label: 'Done',
               onTap: () {
                 Navigator.of(context).pop();

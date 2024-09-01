@@ -1,9 +1,15 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
-class RoomAppbar extends StatelessWidget {
+class RoomAppbar extends StatefulWidget {
   final RoomsModel model;
   const RoomAppbar({super.key, required this.model});
 
+  @override
+  State<RoomAppbar> createState() => _RoomAppbarState();
+}
+
+class _RoomAppbarState extends State<RoomAppbar> {
+  bool isFavorite = false;
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -26,21 +32,16 @@ class RoomAppbar extends StatelessWidget {
               ),
             ),
             Text(
-              model.name,
+              widget.model.name,
               style: ShagafFontStyles.blackMedium16,
             ),
-            Container(
-              width: 30.w,
-              height: 30.w,
-              decoration: BoxDecoration(
-                color: Colors.white70,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: const Icon(
-                Icons.favorite,
-                color: Colors.red,
-              ),
-            ),
+            FavoriteButton(
+              isFavorite: isFavorite,
+              onTap: () {
+              setState(() {
+                isFavorite = !isFavorite;
+              });
+            })
           ],
         ),
       ),

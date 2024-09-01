@@ -5,6 +5,8 @@ class Splasher extends StatelessWidget {
   final Color color;
   final double? width;
   final double? height;
+  final double raduis;
+  final Color splashColor;
   final void Function() onTap;
   const Splasher({
     super.key,
@@ -12,7 +14,9 @@ class Splasher extends StatelessWidget {
     this.color = Colors.transparent,
     this.width,
     this.height,
+    this.splashColor = Colors.white38,
     required this.onTap,
+    this.raduis = 0,
   });
 
   @override
@@ -24,7 +28,8 @@ class Splasher extends StatelessWidget {
         width: width,
         height: height,
         child: InkWell(
-          splashColor: Colors.white24,
+          borderRadius: BorderRadius.circular(raduis),
+          splashColor: splashColor,
           onTap: onTap,
           child: SizedBox(
             width: width,
