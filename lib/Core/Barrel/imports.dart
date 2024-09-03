@@ -56,3 +56,6 @@ export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/bottomsheetp
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/custom_radio_button.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/room_widget.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/favorite_button.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/events_category.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/orders_category.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/room_category.dart';

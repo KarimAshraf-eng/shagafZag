@@ -6,13 +6,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
         children: [
-          const HomeCarouselSlider(),
-          const Advertisement(),
-          const Category(),
-          40.verticalSpace,
+           HomeCarouselSlider(),
+           Advertisement(),
+           Category(),
         ],
       ),
     );
