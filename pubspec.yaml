@@ -40,6 +40,8 @@ dependencies:
   flutter_map: ^4.0.0
   latlong2: ^0.8.1
   maps_launcher: ^2.2.1
+  table_calendar: ^3.0.0
+  intl: ^0.18.0
   flutter:
     sdk: flutter
 
@@ -87,6 +89,16 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/Comfortaa-Regular.ttf
+    - family: Glory
+      fonts:
+        - asset: assets/fonts/Glory-VariableFont_wght.ttf
+    - family: inter
+      fonts:
+        - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

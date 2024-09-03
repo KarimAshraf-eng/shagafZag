@@ -192,4 +192,16 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w500,
       color: const Color(0xff1B1B1B),
       fontFamily: 'Comfortaa');
+
+      static final blackMedium20inter = TextStyle(
+      fontSize: 20.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      fontFamily: 'inter');
+      
+      static final blackNormal16inter = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      fontFamily: 'inter');
 }
