@@ -10,6 +10,7 @@ abstract class AppRouters {
   static const drawer = '/CustomDrawer';
   static const roomView = '/RoomView';
   static const roomDetailsView = '/RoomDetailsView';
+  static const dataAndTimeView = "/DataAndTimeView";
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -45,12 +46,14 @@ abstract class AppRouters {
         builder: (context, state) => const CustomDrawer(),
       ),
       GoRoute(
-        path: roomView,
-        builder: (context, state) => const RoomView(),
+        path: roomDetailsView,
+        builder: (context, state) => RoomDetailsView(
+          model: state.extra as RoomsModel,
+        ),
       ),
       GoRoute(
-        path: roomDetailsView,
-        builder: (context, state) =>  RoomDetailsView(model: state.extra as RoomsModel,),
+        path: dataAndTimeView,
+        builder: (context, state) => const DataAndTimeView(),
       ),
     ],
   );
