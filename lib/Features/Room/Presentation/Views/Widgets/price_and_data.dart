@@ -60,7 +60,9 @@ class PriceAndData extends StatelessWidget {
               height: 38.h,
               color: ShagafColors.secondaryColor,
               style: ShagafFontStyles.whiteNormal16,
-              onTap: () {}),
+              onTap: () {
+                GoRouter.of(context).push(AppRouters.dataAndTimeView);
+              }),
         ],
       ),
     );

@@ -17,7 +17,8 @@ class RoomView extends StatelessWidget {
             size: 24,
           ),
         ),
-        title: Center(
+        title: Padding(
+          padding: const EdgeInsets.only(left: 100),
           child: Text(
             "Rooms",
             style: ShagafFontStyles.blackMedium20,

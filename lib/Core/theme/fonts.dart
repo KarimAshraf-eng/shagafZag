@@ -31,6 +31,12 @@ abstract class ShagafFontStyles {
       color: Colors.white,
       fontFamily: 'Comfortaa');
 
+  static final blackNormal16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
+
   static final blackNormal14 = TextStyle(
       fontSize: 14.sp,
       fontWeight: FontWeight.w400,
@@ -127,6 +133,18 @@ abstract class ShagafFontStyles {
       color: Colors.black,
       fontFamily: 'Comfortaa');
 
+  static final whiteMedium16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+
+  static final blackMedium15 = TextStyle(
+      fontSize: 15.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
+
   static final blackMedium20 = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeight.w500,
@@ -204,4 +222,16 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w400,
       color: Colors.black,
       fontFamily: 'inter');
+
+      static final amSelected = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
+      
+      static final amUnSelected = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.grey,
+      fontFamily: 'Comfortaa');
 }

@@ -26,3 +26,5 @@ const calender = "assets/icons/calender.svg";
 const calendarDate = "assets/icons/calendar-date-20.svg";
 const calenderArrowRight = "assets/icons/calender_arrow-right.svg";
 const calenderArrowleft = "assets/icons/calender_arrow-left.svg";
+const buttonAdd = "assets/icons/button_add.svg";
+const buttonMinus = "assets/icons/button_minus.svg";

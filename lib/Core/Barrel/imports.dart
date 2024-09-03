@@ -34,7 +34,7 @@ export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/home_carouse
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/list_viw_advertisement.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/category.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/list_view_booking_type.dart';
-export 'package:shape_to_go/shape_to_go.dart';
+// export 'package:shape_to_go/shape_to_go.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/custom_drower.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/home_view.dart';
 export 'package:shagaf_zag/Features/Room/Presentation/Views/room_view.dart';
@@ -59,3 +59,12 @@ export 'package:shagaf_zag/Features/Room/Presentation/Views/Widgets/favorite_but
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/events_category.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/orders_category.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/room_category.dart';
+export 'package:shagaf_zag/Features/date_time/Presentation/Views/data_and_time_view.dart';
+export 'package:table_calendar/table_calendar.dart';
+export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/calendar_widget.dart';
+export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/time_picker_widget.dart';
+export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/finish_button.dart';
+export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/number_of_seat.dart';
+
+
+
