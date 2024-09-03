@@ -46,6 +46,10 @@ abstract class AppRouters {
         builder: (context, state) => const CustomDrawer(),
       ),
       GoRoute(
+        path: roomView,
+        builder: (context, state) => const RoomView(),
+      ),
+      GoRoute(
         path: roomDetailsView,
         builder: (context, state) => RoomDetailsView(
           model: state.extra as RoomsModel,
