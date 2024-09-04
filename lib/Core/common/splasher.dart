@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Splasher extends StatelessWidget {
-  final Widget child;
+  final Widget? child;
   final Color color;
   final double? width;
   final double? height;
@@ -10,7 +10,7 @@ class Splasher extends StatelessWidget {
   final void Function() onTap;
   const Splasher({
     super.key,
-    required this.child,
+    this.child,
     this.color = Colors.transparent,
     this.width,
     this.height,

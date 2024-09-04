@@ -37,6 +37,12 @@ abstract class ShagafFontStyles {
       color: Colors.black,
       fontFamily: 'Comfortaa');
 
+  static final blackNormal18 = TextStyle(
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
+
   static final blackNormal14 = TextStyle(
       fontSize: 14.sp,
       fontWeight: FontWeight.w400,
@@ -60,6 +66,20 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w700,
       color: Colors.black,
       fontFamily: 'Comfortaa');
+
+  static final whiteBold32 = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.w700,
+    color: Colors.white,
+    fontFamily: 'Comfortaa'
+  );
+
+  static final redBold32 = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.w700,
+    color: ShagafColors.secondaryColor,
+    fontFamily: 'Comfortaa',
+  );
 
   static final redMedium12 = TextStyle(
       fontSize: 12.sp,
