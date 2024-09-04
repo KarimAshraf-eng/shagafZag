@@ -96,6 +96,18 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w400,
       color: Colors.white,
       fontFamily: 'Comfortaa');
+      
+      static final whiteMedium14500 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.white,
+      fontFamily: 'Comfortaa');
+      
+      static final blackMedium14 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
 
   static final blacksemiBold20 = TextStyle(
       fontSize: 20.sp,

@@ -64,15 +64,15 @@ class _HomeCarouselSliderState extends State<HomeCarouselSlider> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              InkWell(
-                onTap: () {
+              IconButton(
+                onPressed: () {
                   Scaffold.of(context).openDrawer();
                 },
-                child: SvgPicture.asset(upBar),
+                icon: SvgPicture.asset(upBar),
               ),
-              InkWell(
-                onTap: () {},
-                child: SvgPicture.asset(notification),
+              IconButton(
+                onPressed: () {},
+                icon: SvgPicture.asset(notification),
               ),
             ],
           ),
