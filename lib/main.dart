@@ -14,6 +14,14 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_ , child){
         return MaterialApp.router(
+          theme: ThemeData().copyWith(
+            scaffoldBackgroundColor: Colors.white,
+            appBarTheme: const AppBarTheme(
+              elevation: 0,
+              scrolledUnderElevation: 0,
+              color: Colors.white
+            )
+          ),
           routerConfig: AppRouters.router,
         debugShowCheckedModeBanner: false,
       );
