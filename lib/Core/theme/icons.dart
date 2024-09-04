@@ -28,3 +28,6 @@ const calenderArrowRight = "assets/icons/calender_arrow-right.svg";
 const calenderArrowleft = "assets/icons/calender_arrow-left.svg";
 const buttonAdd = "assets/icons/button_add.svg";
 const buttonMinus = "assets/icons/button_minus.svg";
+const date = "assets/icons/date.svg";
+const deposit = "assets/icons/deposit.svg";
+const coffe1 = "assets/icons/coffe1.svg";

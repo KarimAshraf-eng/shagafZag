@@ -65,6 +65,7 @@ export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/calenda
 export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/time_picker_widget.dart';
 export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/finish_button.dart';
 export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/number_of_seat.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/list_tile_widget.dart';
 
 
 

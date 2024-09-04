@@ -246,4 +246,10 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w500,
       color: Colors.grey,
       fontFamily: 'Comfortaa');
+
+      static final blackSemiBold16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w600,
+      color: Colors.black,
+      fontFamily: 'Comfortaa');
 }

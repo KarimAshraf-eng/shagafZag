@@ -17,7 +17,7 @@ final List<String> labels = [
 
 final List<Widget> pages = [
   const Home(),
-   BookView(),
+  const BookView(),
   const Center(child: Text('Offers')),
   const Center(child: Text('More')),
 ];
