@@ -31,3 +31,8 @@ const buttonMinus = "assets/icons/button_minus.svg";
 const date = "assets/icons/date.svg";
 const deposit = "assets/icons/deposit.svg";
 const coffe1 = "assets/icons/coffe1.svg";
+const locationTraining = "assets/icons/locationTraining.png";
+const ok = "assets/icons/ok.png";
+const seatOutline = "assets/icons/seat_outline.png";
+const discounts = "assets/icons/discounts.png";
+

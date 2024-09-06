@@ -80,7 +80,11 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
                     ),
                     backgroundColor: ShagafColors.backgroundColor,
                   ),
-                  child: Text('Select Data',style: ShagafFontStyles.whiteNormal17,),
+                  child: InkWell(
+                    onTap: (){
+                      GoRouter.of(context).push(AppRouters.bookingReviewView);
+                    },
+                      child: Text('Select Data',style: ShagafFontStyles.whiteNormal17,)),
                 ),
               ),
             ),

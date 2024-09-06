@@ -67,6 +67,11 @@ export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/finish_
 export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/number_of_seat.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/list_tile_widget.dart';
 export 'package:shagaf_zag/Features/date_time/Presentation/Views/Widgets/time_column.dart';
-
-
-
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/booking_review_view.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/list_view_review.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/booking_details.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/custom_button_review.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/discounts_available.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/payment_method.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/training_room.dart';
+export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/dashed_line_widget.dart';

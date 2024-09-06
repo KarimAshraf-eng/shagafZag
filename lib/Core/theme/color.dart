@@ -10,4 +10,9 @@ abstract class ShagafColors {
   static const secondaryTextColor = Color(0xff363636);
   static const tertiaryTextColor = Color(0xff787878);
   static const darkGrey = Color(0xff383838);
+  static const backgroundReview = Color(0xffF0F0F0);
+  static const cancellationPolicy = Color(0xff455A64);
+  static const warmGreyReview = Color(0xff555555);
+  static const darkGrayPayment = Color(0xff464646);
+  static const discount = Color(0xff9A9A9A);
 }

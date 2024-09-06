@@ -272,4 +272,54 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w600,
       color: Colors.black,
       fontFamily: 'Comfortaa');
+
+      static final darkGrayishBlue16 = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500,
+      color: ShagafColors.cancellationPolicy,
+      fontFamily: 'Comfortaa');
+
+      static final warmGrey14 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.cancellationPolicy,
+      fontFamily: 'Comfortaa');
+
+      static final darkGray10 = TextStyle(
+      fontSize: 10.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.darkGrayPayment,
+      fontFamily: 'Comfortaa');
+
+      static final darkGray14 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: ShagafColors.darkGrayPayment,
+      fontFamily: 'Comfortaa');
+
+  static final darkGray12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+      color: const Color(0xff515151),
+      fontFamily: 'Comfortaa');
+
+  static final mediumRed12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.secondaryColor,
+      fontFamily: 'Comfortaa');
+
+  static final mediumRed14 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: ShagafColors.secondaryColor,
+      fontFamily: 'Comfortaa');
+
+  static final grayDark10 = TextStyle(
+      fontSize: 10.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.discount,
+      fontFamily: 'Comfortaa');
+
+
 }
