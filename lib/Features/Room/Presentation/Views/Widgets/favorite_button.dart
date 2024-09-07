@@ -1,5 +1,4 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/Core/common/splasher.dart';
 
 class FavoriteButton extends StatelessWidget {
   final bool isFavorite;

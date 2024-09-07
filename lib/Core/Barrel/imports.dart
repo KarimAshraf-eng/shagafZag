@@ -75,3 +75,7 @@ export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/di
 export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/payment_method.dart';
 export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/training_room.dart';
 export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/dashed_line_widget.dart';
+export 'package:shagaf_zag/Core/common/splasher.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/design_category.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/birth_day.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/booking_type.dart';

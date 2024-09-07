@@ -3,7 +3,6 @@ import 'package:shagaf_zag/Core/Barrel/imports.dart';
 class BookingType extends StatelessWidget {
   const BookingType({super.key, required this.booking});
   final String booking;
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,7 +13,20 @@ class BookingType extends StatelessWidget {
         decoration: BoxDecoration(
             color: ShagafColors.secondaryColor.withOpacity(0.90),
             borderRadius: BorderRadius.circular(12)),
-            child: Center(child: Text(booking,style: ShagafFontStyles.whiteMidum16,)),
+        child: Splasher(
+          raduis: 12,
+          onTap: () {
+            GoRouter.of(context).pushNamed(booking);
+          },
+          child: SizedBox(
+            child: Center(
+              child: Text(
+                booking,
+                style: ShagafFontStyles.whiteMidum16,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

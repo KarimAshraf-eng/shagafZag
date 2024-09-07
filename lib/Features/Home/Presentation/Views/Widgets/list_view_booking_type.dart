@@ -1,5 +1,4 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/booking_type.dart';
 
 class ListViewBookingType extends StatelessWidget {
   const ListViewBookingType({super.key});

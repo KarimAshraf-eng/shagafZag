@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class Splasher extends StatelessWidget {
   final Widget? child;

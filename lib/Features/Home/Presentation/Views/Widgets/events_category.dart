@@ -1,6 +1,4 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/Core/common/splasher.dart';
-import 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/design_category.dart';
 
 class EventsCategory extends StatelessWidget {
   const EventsCategory({super.key});

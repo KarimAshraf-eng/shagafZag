@@ -12,6 +12,7 @@ abstract class AppRouters {
   static const roomDetailsView = '/RoomDetailsView';
   static const dataAndTimeView = "/DataAndTimeView";
   static const bookingReviewView = "/BookingReviewView";
+  static const birthDay = "/BirthDay";
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -64,6 +65,11 @@ abstract class AppRouters {
         path: bookingReviewView,
         builder: (context, state) => const BookingReviewView(),
       ),
+      GoRoute(
+      path: birthDay,
+      name: "Birthday",
+      builder: (context, state) => const BirthDay(),
+      )
     ],
   );
 }

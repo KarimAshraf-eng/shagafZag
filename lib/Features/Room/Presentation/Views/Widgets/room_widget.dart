@@ -1,5 +1,4 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/core/common/splasher.dart';
 
 class RoomWidget extends StatelessWidget {
   final RoomsModel model;
