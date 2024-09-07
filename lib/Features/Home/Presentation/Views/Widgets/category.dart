@@ -18,20 +18,20 @@ class Category extends StatelessWidget {
         ),
         SizedBox(
           height: 380.h,
-          child: const Stack(
+          child: Stack(
             children: [
-               RoomCategory(),
+               const RoomCategory(),
               Positioned(
                 bottom: 40,
                 left: 32,
                 child:  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                   OrdersCategory(),
+                   const OrdersCategory(),
                    SizedBox(
-                      width: 20,
+                      width: 20.w,
                     ),
-                    EventsCategory()
+                    const EventsCategory()
                   ],
                 ),
               )

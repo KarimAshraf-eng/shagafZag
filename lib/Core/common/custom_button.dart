@@ -7,15 +7,17 @@ class CustomButton extends StatelessWidget {
   final double width;
   final Color color;
   final TextStyle style;
-  CustomButton({
-    super.key,
-    required this.label,
-    required this.onTap,
-    this.height = 40,
-    this.width = double.maxFinite,
-    this.color = ShagafColors.primaryColor,
-    TextStyle? style 
-  }) : style = style ?? ShagafFontStyles.whiteMedium14;
+  final double raduis;
+  CustomButton(
+      {super.key,
+      required this.label,
+      required this.onTap,
+      this.height = 40,
+      this.width = double.maxFinite,
+      this.color = ShagafColors.primaryColor,
+      this.raduis = 0,
+      TextStyle? style})
+      : style = style ?? ShagafFontStyles.whiteMedium14;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,10 @@ class CustomButton extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: Ink(
+          decoration: BoxDecoration(
           color: color,
+            borderRadius: BorderRadius.circular(raduis)
+          ),
           height: height.h,
           width: width.w,
           child: InkWell(

@@ -16,12 +16,22 @@ class _FinishButtonState extends State<FinishButton> {
       child: CustomButton(
         width: 342.w,
         height: 45.h,
-        label: click? "Loading": "Finish",
+        label: click ? "Loading" : "Finish",
         style: ShagafFontStyles.whiteMedium16,
-        color: click? Colors.grey: ShagafColors.primaryColor,
+        color: click ? Colors.grey : ShagafColors.primaryColor,
         onTap: () {
           setState(() {
             click = !click;
+            Future.delayed(
+              const Duration(seconds: 2),
+              () {
+                // ignore: use_build_context_synchronously
+                GoRouter.of(context).push(AppRouters.bookingReviewView);
+                setState(() {
+                  click = !click;
+                });
+              },
+            );
           });
         },
       ),

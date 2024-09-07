@@ -8,15 +8,11 @@ class DiscountsAvailable extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: Container(
-        padding: const EdgeInsets.symmetric(
-          vertical: 8
-        ),
+        padding: const EdgeInsets.symmetric(vertical: 8),
         width: 342.w,
         height: 230.h,
         decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(12)
-        ),
+            color: Colors.white, borderRadius: BorderRadius.circular(12)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -28,27 +24,24 @@ class DiscountsAvailable extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Discounts Available",style: ShagafFontStyles.blackMedium14,),
+                    Text(
+                      "Discounts Available",
+                      style: ShagafFontStyles.blackMedium14,
+                    ),
                     CustomButton(
                         width: 99.w,
                         height: 33.h,
-                        color: const Color(0xFFFFCDD2),
+                        color: ShagafColors.secondaryColor.withOpacity(.33),
                         label: 'Add promo',
                         style: ShagafFontStyles.mediumRed12,
-                        onTap: () {}
-                    ),
+                        onTap: () {}),
                   ],
                 ),
               ),
             ),
-
             Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 25,
-                vertical: 12
-              ),
-              child:
-              Container(
+              padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 12),
+              child: Container(
                 width: 292.14.w,
                 height: 42.h,
                 // padding: EdgeInsets.only(left: 8 ,top: 18,right: 8,bottom: 18),
@@ -67,36 +60,38 @@ class DiscountsAvailable extends StatelessWidget {
                         height: 17.14.h,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage(discounts),
-                              ),
+                            image: AssetImage(discounts),
+                          ),
                         ),
                       ),
-                      Text("30% off  10 booking (up to EGP 150)",
-                        style: ShagafFontStyles.grayDark10,),
-                      const SizedBox(width: 5,),
+                      Text(
+                        "30% off  10 booking (up to EGP 150)",
+                        style: ShagafFontStyles.grayDark10,
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
                       CustomButton(
                           width: 63.w,
                           height: 26.h,
-                          color: const Color(0xFFFFCDD2),
+                          color: ShagafColors.secondaryColor.withOpacity(.33),
                           label: 'Apply',
                           style: ShagafFontStyles.mediumRed12,
-                          onTap: () {}
-                      ),
+                          onTap: () {}),
                     ],
                   ),
                 ),
               ),
             ),
-
             const Divider(),
-
             Padding(
               padding: const EdgeInsets.only(left: 12),
-              child: Text("Booking Charges",style: ShagafFontStyles.blackMedium14,),
+              child: Text(
+                "Booking Charges",
+                style: ShagafFontStyles.blackMedium14,
+              ),
             ),
-
             const Divider(),
-
             Padding(
               padding: const EdgeInsets.only(left: 12),
               child: SizedBox(
@@ -105,8 +100,14 @@ class DiscountsAvailable extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("x1 Day EGP 100.0 x 1 Seat",style:ShagafFontStyles.darkGray14,),
-                    Text("EGP 100.0",style:ShagafFontStyles.darkGray14,),
+                    Text(
+                      "x1 Day EGP 100.0 x 1 Seat",
+                      style: ShagafFontStyles.darkGray14,
+                    ),
+                    Text(
+                      "EGP 100.0",
+                      style: ShagafFontStyles.darkGray14,
+                    ),
                   ],
                 ),
               ),
@@ -120,9 +121,14 @@ class DiscountsAvailable extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Total Due",style:ShagafFontStyles.mediumRed14,),
-
-                    Text("EGP 100.0",style:ShagafFontStyles.mediumRed14,),
+                    Text(
+                      "Total Due",
+                      style: ShagafFontStyles.mediumRed14,
+                    ),
+                    Text(
+                      "EGP 100.0",
+                      style: ShagafFontStyles.mediumRed14,
+                    ),
                   ],
                 ),
               ),

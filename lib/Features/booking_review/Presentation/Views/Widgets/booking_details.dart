@@ -79,7 +79,8 @@ class BookingDetails extends StatelessWidget {
                 CustomButton(
                     width: 77.w,
                     height: 33.h,
-                    color: const Color(0xFFFFCDD2),
+                    raduis: 20,
+                    color: ShagafColors.secondaryColor.withOpacity(.33),
                     label: 'Change',
                     style: ShagafFontStyles.mediumRed12,
                     onTap: () {

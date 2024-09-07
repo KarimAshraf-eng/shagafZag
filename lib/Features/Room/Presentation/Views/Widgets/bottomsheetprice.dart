@@ -82,7 +82,6 @@ class _BottomsheetpriceState extends State<Bottomsheetprice> {
                   ),
                   child: InkWell(
                     onTap: (){
-                      GoRouter.of(context).push(AppRouters.bookingReviewView);
                     },
                       child: Text('Select Data',style: ShagafFontStyles.whiteNormal17,)),
                 ),

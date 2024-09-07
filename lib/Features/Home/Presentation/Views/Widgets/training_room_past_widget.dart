@@ -20,7 +20,7 @@ class TrainingRoomPastWidget extends StatelessWidget {
           ]
         ),
         width: 355.w,
-        height: 246.h,
+        height: 248.h,
         child: Padding(
           padding: const EdgeInsets.only(left: 15),
           child: Column(
@@ -30,8 +30,8 @@ class TrainingRoomPastWidget extends StatelessWidget {
                 "Training Room",
                 style: ShagafFontStyles.blackSemiBold16,
               ),
-              const SizedBox(
-                height: 15,
+               SizedBox(
+                height: 15.h,
               ),
               const ListTileWidget(
                 title: 'Date',
