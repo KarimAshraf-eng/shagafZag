@@ -1,7 +1,5 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
-import 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/book_tap_bar.dart';
-import 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/past_widget.dart';
-import 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/upcoming_widget.dart';
+
 
 class BookView extends StatefulWidget {
   const BookView({super.key});

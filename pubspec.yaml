@@ -42,6 +42,7 @@ dependencies:
   maps_launcher: ^2.2.1
   table_calendar: ^3.0.0
   intl: ^0.18.0
+  provider:
   flutter:
     sdk: flutter
 

@@ -77,5 +77,22 @@ export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/tr
 export 'package:shagaf_zag/Features/booking_review/Presentation/Views/Widgets/dashed_line_widget.dart';
 export 'package:shagaf_zag/Core/common/splasher.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/design_category.dart';
-export 'package:shagaf_zag/Features/BirthDay/presentation/Views/birth_day.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/booking_type.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/Widgets/hint.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/birth_day_view.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/Widgets/circlue_button.dart';
+export 'package:provider/provider.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/manager/mange.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/Widgets/description_widget.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/Widgets/cakes_widget.dart';
+export 'package:shagaf_zag/Features/BirthDay/presentation/Views/Widgets/decorations_widget.dart';
+export 'package:shagaf_zag/Features/Photo%20Session/presentation/Views/photo_session_view.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/book_tap_bar.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/past_widget.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/upcoming_widget.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/setting_view.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/book_view.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/contact_us_view.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/profile_view.dart';
+
+

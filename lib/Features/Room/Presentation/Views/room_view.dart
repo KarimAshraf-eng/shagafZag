@@ -7,7 +7,7 @@ class RoomView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        centerTitle: true,
         leading: IconButton(
           onPressed: () {
             GoRouter.of(context).pop();
@@ -17,12 +17,9 @@ class RoomView extends StatelessWidget {
             size: 24,
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 100),
-          child: Text(
-            "Rooms",
-            style: ShagafFontStyles.blackMedium20,
-          ),
+        title: Text(
+          "Rooms",
+          style: ShagafFontStyles.blackMedium20,
         ),
       ),
       body: const RoomBody(),

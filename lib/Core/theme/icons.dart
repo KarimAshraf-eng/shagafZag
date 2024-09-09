@@ -35,4 +35,14 @@ const locationTraining = "assets/icons/locationTraining.png";
 const ok = "assets/icons/ok.png";
 const seatOutline = "assets/icons/seat_outline.png";
 const discounts = "assets/icons/discounts.png";
-
+const add = "assets/icons/add.svg";
+const minus = "assets/icons/minus.svg";
+const bigArrowDown = "assets/icons/big_arrow_down.svg";
+const contactUs = "assets/icons/contact_us.svg";
+const aboutUs = "assets/icons/about_us.svg";
+const tiktok = "assets/icons/tiktok.svg";
+const snapchat = "assets/icons/snapchat.svg";
+const gmail = "assets/icons/gmail.svg";
+const facebook = "assets/icons/facebook.svg";
+const phone = "assets/icons/phone.svg";
+const instagram = "assets/icons/instagram.svg";

@@ -1,6 +1,11 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+    create: (_) => CounterProvider(),
+    child: const MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {

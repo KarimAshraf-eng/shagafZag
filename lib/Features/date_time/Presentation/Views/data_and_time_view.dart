@@ -9,12 +9,10 @@ class DataAndTimeView extends StatelessWidget {
       bottomSheet: const FinishButton(),
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Padding(
-          padding: const EdgeInsets.only(left: 45),
-          child: Text(
-            "Select date and time",
-            style: ShagafFontStyles.blackMedium16,
-          ),
+        centerTitle: true,
+        title: Text(
+          "Select date and time",
+          style: ShagafFontStyles.blackMedium16,
         ),
         leading: IconButton(
               onPressed: () {
