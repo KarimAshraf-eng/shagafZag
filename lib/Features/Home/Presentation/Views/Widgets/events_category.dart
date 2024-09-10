@@ -15,7 +15,9 @@ class EventsCategory extends StatelessWidget {
           borderRadius: BorderRadius.circular(19),
         ),
         child: Splasher(
-          onTap: () {},
+          onTap: () {
+            GoRouter.of(context).push(AppRouters.eventsView);
+          },
           width: 163.w,
           height: 220.h,
           child: Padding(

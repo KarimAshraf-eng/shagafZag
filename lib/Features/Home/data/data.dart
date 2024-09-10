@@ -1,5 +1,6 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 import 'package:shagaf_zag/Features/Home/Presentation/Views/book_view.dart';
+import 'package:shagaf_zag/Features/Offers/Presentation/offers_view.dart';
 
 final List<String> iconList = [
   "assets/icons/home.svg",
@@ -18,7 +19,7 @@ final List<String> labels = [
 final List<Widget> pages = [
   const Home(),
   const BookView(),
-  const Center(child: Text('Offers')),
+  const OffersView(),
   const Center(child: Text('More')),
 ];
 

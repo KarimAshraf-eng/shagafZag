@@ -35,4 +35,5 @@ const locationTraining = "assets/icons/locationTraining.png";
 const ok = "assets/icons/ok.png";
 const seatOutline = "assets/icons/seat_outline.png";
 const discounts = "assets/icons/discounts.png";
+const arrow = "assets/icons/arrow.jpg";
 

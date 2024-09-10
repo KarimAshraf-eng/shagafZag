@@ -152,6 +152,11 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w400,
       color: ShagafColors.darkGrey,
       fontFamily: 'Comfortaa');
+  static final darkGreyMedium12 = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.darkGrey,
+      fontFamily: 'Comfortaa');
 
   static final whiteMidum16 = TextStyle(
       fontSize: 16.sp,
@@ -319,6 +324,18 @@ abstract class ShagafFontStyles {
       fontSize: 10.sp,
       fontWeight: FontWeight.w400,
       color: ShagafColors.discount,
+      fontFamily: 'Comfortaa');
+
+  static final darkGray11 = TextStyle(
+      fontSize: 11.sp,
+      fontWeight: FontWeight.w400,
+      color:  const Color(0xff252525),
+      fontFamily: 'Comfortaa');
+
+  static final darkCyan14 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500,
+      color: ShagafColors.primaryColor,
       fontFamily: 'Comfortaa');
 
 

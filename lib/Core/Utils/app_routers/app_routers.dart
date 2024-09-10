@@ -1,4 +1,7 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
+import 'package:shagaf_zag/Features/Events/Presentation/events_details_view.dart';
+import 'package:shagaf_zag/Features/Events/Presentation/events_view.dart';
+import 'package:shagaf_zag/Features/Events/data/model/events_model.dart';
 
 abstract class AppRouters {
   static const onBordingView = "/OnBordingview";
@@ -13,6 +16,8 @@ abstract class AppRouters {
   static const dataAndTimeView = "/DataAndTimeView";
   static const bookingReviewView = "/BookingReviewView";
   static const birthDay = "/BirthDay";
+  static const eventsView = "/EventsView";
+  static const eventsDetailsView = "/EventsDetailsView";
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -69,7 +74,17 @@ abstract class AppRouters {
       path: birthDay,
       name: "Birthday",
       builder: (context, state) => const BirthDay(),
-      )
+      ),
+      GoRoute(
+        path: eventsView,
+        builder: (context, state) => const EventsView(),
+      ),
+      GoRoute(
+        path: eventsDetailsView,
+        builder: (context, state) => EventsDetailsView(
+          model: state.extra as EventsModel,
+        ),
+      ),
     ],
   );
 }
