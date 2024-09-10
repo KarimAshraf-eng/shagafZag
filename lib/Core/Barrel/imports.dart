@@ -94,5 +94,19 @@ export 'package:shagaf_zag/Features/Home/Presentation/Views/setting_view.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/book_view.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/contact_us_view.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/profile_view.dart';
-
-
+export 'package:shagaf_zag/Features/Offers/data/model/offers_model.dart';
+export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/alert_dialog_widget.dart';
+export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/offers_widget.dart';
+export 'package:shagaf_zag/Features/Offers/data/data.dart';
+export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/offers_body.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/custom_bottom_sheet.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/lower_part.dart';
+export 'package:shagaf_zag/Features/Events/data/data.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_appbar.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_details_carousel_image.dart';
+export 'package:shagaf_zag/Features/Events/data/model/events_model.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_body.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_widget.dart';
+export 'package:shagaf_zag/Features/Offers/Presentation/offers_view.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/events_details_view.dart';
+export 'package:shagaf_zag/Features/Events/Presentation/events_view.dart';

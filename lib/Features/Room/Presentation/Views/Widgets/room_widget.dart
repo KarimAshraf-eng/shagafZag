@@ -112,7 +112,6 @@ class RoomWidget extends StatelessWidget {
                   GoRouter.of(context).push(AppRouters.roomDetailsView,extra: model);
                 }),
           ),
-          // Splasher(child: child, onTap: onTap)
         ],
       ),
     );

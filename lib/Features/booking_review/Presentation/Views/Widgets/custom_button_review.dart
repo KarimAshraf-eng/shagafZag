@@ -24,7 +24,7 @@ class CustomButtonReview extends StatelessWidget {
               label: "Cancellation Policy",
               style: ShagafFontStyles.darkGrayishBlue16,
               onTap: (){
-                GoRouter.of(context).pop();
+                GoRouter.of(context).push(AppRouters.dataAndTimeView);
               },),
           ],
         ),

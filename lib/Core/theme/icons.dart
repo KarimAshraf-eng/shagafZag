@@ -46,3 +46,5 @@ const gmail = "assets/icons/gmail.svg";
 const facebook = "assets/icons/facebook.svg";
 const phone = "assets/icons/phone.svg";
 const instagram = "assets/icons/instagram.svg";
+const arrow = "assets/icons/arrow.jpg";
+

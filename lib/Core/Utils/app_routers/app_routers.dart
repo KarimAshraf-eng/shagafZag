@@ -1,5 +1,6 @@
 import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
+
 abstract class AppRouters {
   static const onBordingView = "/OnBordingview";
   static const loginView = "/LoginView";
@@ -16,6 +17,9 @@ abstract class AppRouters {
   static const photoSession = "/PhotoSessionView";
   static const contactUsView = "/ContactUsView";
   static const profileView = "/ProfileView";
+  static const eventsView = "/EventsView";
+  static const eventsDetailsView = "/EventsDetailsView";
+
   static final router = GoRouter(
     routes: [
       GoRoute(
@@ -85,7 +89,17 @@ abstract class AppRouters {
       GoRoute(
         path: profileView,
         builder: (context, state) => const ProfileView(),
-      )
+      ),
+      GoRoute(
+        path: eventsView,
+        builder: (context, state) => const EventsView(),
+      ),
+      GoRoute(
+        path: eventsDetailsView,
+        builder: (context, state) => EventsDetailsView(
+          model: state.extra as EventsModel,
+        ),
+      ),
     ],
   );
 }

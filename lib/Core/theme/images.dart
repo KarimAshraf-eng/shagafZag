@@ -14,3 +14,4 @@ const decoration2 = "assets/images/decoration2.png";
 const session1 = "assets/images/session1.png";
 const session2 = "assets/images/session2.png";
 const session3 = "assets/images/session3.png";
+const frame = "assets/images/Frame 30042.png";

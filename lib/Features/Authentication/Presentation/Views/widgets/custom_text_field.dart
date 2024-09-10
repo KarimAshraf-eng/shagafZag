@@ -33,7 +33,7 @@ class CustomTextField extends StatelessWidget {
                           width: 20.w,
                           height: 20.h,
                         )
-                      : Container(
+                      : const SizedBox(
                           width: 0,
                           height: 0,
                         )),
