@@ -1,4 +1,4 @@
-import '../../../../Core/Barrel/imports.dart';
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class OffersBody extends StatelessWidget {
   const OffersBody({super.key});

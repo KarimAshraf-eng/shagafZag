@@ -1,6 +1,4 @@
-
-import '../../../../Core/Barrel/imports.dart';
-
+import 'package:shagaf_zag/Core/Barrel/imports.dart';
 
 class OffersWidget extends StatelessWidget {
   final OffersModel model;

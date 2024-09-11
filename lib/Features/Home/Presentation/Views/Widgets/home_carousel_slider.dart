@@ -71,7 +71,9 @@ class _HomeCarouselSliderState extends State<HomeCarouselSlider> {
                 icon: SvgPicture.asset(upBar),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouters.notificationView);
+                },
                 icon: SvgPicture.asset(notification),
               ),
             ],

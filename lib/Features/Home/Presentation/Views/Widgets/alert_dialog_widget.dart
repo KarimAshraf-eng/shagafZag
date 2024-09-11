@@ -1,4 +1,4 @@
-import '../../../../Core/Barrel/imports.dart';
+import 'package:shagaf_zag/core/Barrel/imports.dart';
 
 class AlertDialogWidget extends StatelessWidget {
   const AlertDialogWidget({super.key});
@@ -14,8 +14,8 @@ class AlertDialogWidget extends StatelessWidget {
         width: 313.w,
         height: 215.29.h,
         child: SizedBox(
-              width: 262.14.w,
-              height: 167.29.h,
+          width: 262.14.w,
+          height: 167.29.h,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -49,12 +49,13 @@ class AlertDialogWidget extends StatelessWidget {
                   height: 40.h,
                   color: ShagafColors.secondaryColor,
                   style: ShagafFontStyles.whiteNormal16,
-                  onTap: () {}
-              ),
+                  onTap: () {
+                    GoRouter.of(context).pop();
+                  }),
             ],
           ),
-            ),
         ),
+      ),
     );
   }
 }

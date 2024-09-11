@@ -18,22 +18,6 @@ class CounterProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void addCounter(int price) {
-    counter++;
-    addProductPrice(price);
-    notifyListeners();
-  }
-
-  void minusCounter(int price) {
-    if (counter == 0) {
-      counter = 0;
-    } else {
-      counter--;
-      removeProductPrice(price);
-    }
-    notifyListeners();
-  }
-
   void cleanCart() {
     salary = 0;
     notifyListeners();

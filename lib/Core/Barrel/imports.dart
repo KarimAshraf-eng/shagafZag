@@ -92,13 +92,8 @@ export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/past_widget.
 export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/upcoming_widget.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/setting_view.dart';
 export 'package:shagaf_zag/Features/Home/Presentation/Views/book_view.dart';
-export 'package:shagaf_zag/Features/Home/Presentation/Views/contact_us_view.dart';
-export 'package:shagaf_zag/Features/Home/Presentation/Views/profile_view.dart';
-export 'package:shagaf_zag/Features/Offers/data/model/offers_model.dart';
-export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/alert_dialog_widget.dart';
-export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/offers_widget.dart';
-export 'package:shagaf_zag/Features/Offers/data/data.dart';
-export 'package:shagaf_zag/Features/Offers/Presentation/Widgets/offers_body.dart';
+export 'package:shagaf_zag/Features/Contact_us/Presentation/Views/contact_us_view.dart';
+export 'package:shagaf_zag/Features/Profile/Presentation/Views/profile_view.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/Widgets/custom_bottom_sheet.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/Widgets/lower_part.dart';
 export 'package:shagaf_zag/Features/Events/data/data.dart';
@@ -107,6 +102,23 @@ export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_details_c
 export 'package:shagaf_zag/Features/Events/data/model/events_model.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_body.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/Widgets/events_widget.dart';
-export 'package:shagaf_zag/Features/Offers/Presentation/offers_view.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/events_details_view.dart';
 export 'package:shagaf_zag/Features/Events/Presentation/events_view.dart';
+export 'package:shagaf_zag/Features/Membership/presentation/Views/member_ship_view.dart';
+export 'package:shagaf_zag/Features/Membership/presentation/Views/Widgets/custom_check_box.dart';
+export 'package:shagaf_zag/Features/Membership/presentation/Views/Widgets/a_month_widget.dart';
+export 'package:shagaf_zag/Features/Membership/presentation/Views/Widgets/separate_days_widget.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/offers_body.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/offers_widget.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/Widgets/alert_dialog_widget.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/offers_view.dart';
+export 'package:shagaf_zag/Features/Home/data/models/offers_model.dart';
+export 'package:shagaf_zag/Features/Home/Presentation/Views/notification_view.dart';
+export 'package:shagaf_zag/Features/Order/presentation/Views/order_view.dart';
+export 'package:shagaf_zag/Features/Order/presentation/Views/Widgets/drinks_widget.dart';
+export 'package:shagaf_zag/Features/Order/data/model/drinks_model.dart';
+export 'package:shagaf_zag/Features/Order/data/data.dart';
+export 'package:shagaf_zag/Features/Order/presentation/Views/Widgets/list_view_cold_dirnks.dart';
+export 'package:shagaf_zag/Features/Order/presentation/Views/Widgets/next_button.dart';
+
+

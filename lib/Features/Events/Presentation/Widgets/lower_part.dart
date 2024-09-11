@@ -1,4 +1,4 @@
-import 'package:shagaf_zag/Features/Events/Presentation/Widgets/dashed_line_widget.dart';
+import 'package:shagaf_zag/Features/Events/Presentation/Widgets/dashed_line_widget_b.dart';
 import '../../../../Core/Barrel/imports.dart';
 
 class LowerPart extends StatelessWidget {

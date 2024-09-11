@@ -324,6 +324,11 @@ abstract class ShagafFontStyles {
       fontWeight: FontWeight.w400,
       color: ShagafColors.secondaryColor,
       fontFamily: 'Comfortaa');
+  static final mediumRed14400 = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400,
+      color: ShagafColors.secondaryColor,
+      fontFamily: 'Comfortaa');
 
   static final mediumRed14 = TextStyle(
       fontSize: 14.sp,
